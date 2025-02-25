@@ -1,0 +1,12 @@
+C:\Users\moham\RealFullProjects\E-CommerceSolution\E-CommerceBuisnessLayer\bin\Debug\net9.0\E-CommerceBuisnessLayer.deps.json
+C:\Users\moham\RealFullProjects\E-CommerceSolution\E-CommerceBuisnessLayer\bin\Debug\net9.0\E-CommerceBuisnessLayer.dll
+C:\Users\moham\RealFullProjects\E-CommerceSolution\E-CommerceBuisnessLayer\bin\Debug\net9.0\E-CommerceBuisnessLayer.pdb
+C:\Users\moham\RealFullProjects\E-CommerceSolution\E-CommerceBuisnessLayer\obj\Debug\net9.0\E-CommerceBuisnessLayer.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\moham\RealFullProjects\E-CommerceSolution\E-CommerceBuisnessLayer\obj\Debug\net9.0\E-CommerceBuisnessLayer.AssemblyInfoInputs.cache
+C:\Users\moham\RealFullProjects\E-CommerceSolution\E-CommerceBuisnessLayer\obj\Debug\net9.0\E-CommerceBuisnessLayer.AssemblyInfo.cs
+C:\Users\moham\RealFullProjects\E-CommerceSolution\E-CommerceBuisnessLayer\obj\Debug\net9.0\E-CommerceBuisnessLayer.csproj.CoreCompileInputs.cache
+C:\Users\moham\RealFullProjects\E-CommerceSolution\E-CommerceBuisnessLayer\obj\Debug\net9.0\E-CommerceBuisnessLayer.sourcelink.json
+C:\Users\moham\RealFullProjects\E-CommerceSolution\E-CommerceBuisnessLayer\obj\Debug\net9.0\E-CommerceBuisnessLayer.dll
+C:\Users\moham\RealFullProjects\E-CommerceSolution\E-CommerceBuisnessLayer\obj\Debug\net9.0\refint\E-CommerceBuisnessLayer.dll
+C:\Users\moham\RealFullProjects\E-CommerceSolution\E-CommerceBuisnessLayer\obj\Debug\net9.0\E-CommerceBuisnessLayer.pdb
+C:\Users\moham\RealFullProjects\E-CommerceSolution\E-CommerceBuisnessLayer\obj\Debug\net9.0\ref\E-CommerceBuisnessLayer.dll

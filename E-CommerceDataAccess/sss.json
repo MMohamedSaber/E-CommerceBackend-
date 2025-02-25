@@ -1,0 +1,3 @@
+{
+  "constr": "Server=. ; Database=E_Commerce; User ID=sa ; Password=sa123456; TrustServerCertificate=true;"
+}

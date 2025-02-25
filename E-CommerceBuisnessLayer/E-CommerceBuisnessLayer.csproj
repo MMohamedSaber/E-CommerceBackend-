@@ -7,8 +7,4 @@
     <Nullable>enable</Nullable>
   </PropertyGroup>
 
-  <ItemGroup>
-    <ProjectReference Include="..\E-CommerceDataAccess\E-CommerceDataAccess.csproj" />
-  </ItemGroup>
-
 </Project>

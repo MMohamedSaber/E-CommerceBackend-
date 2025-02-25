@@ -1,15 +1,15 @@
-﻿using Microsoft.EntityFrameworkCore;
-using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
+﻿using E_CommerceDataAccess.Models;
+using Microsoft.EntityFrameworkCore;
+using Microsoft.Extensions.Configuration;
 
 namespace E_CommerceDataAccess.Data
 {
     public class AppDbContext : DbContext
     {
+        public DbSet<Categori> categories { get; set; }
 
+        public AppDbContext(DbContextOptions<AppDbContext> options) : base(options) { }
 
     }
+
 }

@@ -9,10 +9,12 @@
 
   <ItemGroup>
     <PackageReference Include="Microsoft.AspNetCore.OpenApi" Version="9.0.1" />
+    <PackageReference Include="Swashbuckle.AspNetCore.SwaggerUI" Version="7.2.0" />
   </ItemGroup>
 
   <ItemGroup>
     <ProjectReference Include="..\E-CommerceBuisnessLayer\E-CommerceBuisnessLayer.csproj" />
+    <ProjectReference Include="..\E-CommerceDataAccess\E-CommerceDataAccess.csproj" />
   </ItemGroup>
 
 </Project>

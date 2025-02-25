@@ -3,14 +3,15 @@
   "WorkspaceRootPath": "C:\\Users\\moham\\RealFullProjects\\E-CommerceSolution\\E-CommerceAPI\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{6C7FD6D1-03EF-4BBD-B320-BBD353A27003}|..\\E-CommerceDataAccess\\E-CommerceDataAccess.csproj|c:\\users\\moham\\realfullprojects\\e-commercesolution\\e-commercedataaccess\\e-commercedataaccess.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|"
+      "AbsoluteMoniker": "D:0:0:{6C7FD6D1-03EF-4BBD-B320-BBD353A27003}|..\\E-CommerceDataAccess\\E-CommerceDataAccess.csproj|c:\\users\\moham\\realfullprojects\\e-commercesolution\\e-commercedataaccess\\data\\appdbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{3726AD0F-F4F3-4391-AC00-BBB8D7E0E761}|..\\E-CommerceBuisnessLayer\\E-CommerceBuisnessLayer.csproj|c:\\users\\moham\\realfullprojects\\e-commercesolution\\e-commercebuisnesslayer\\e-commercebuisnesslayer.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|"
+      "AbsoluteMoniker": "D:0:0:{29EDECCF-0E4D-47B2-AD86-29D25CFF0CF8}|E-CommerceAPI.csproj|c:\\users\\moham\\realfullprojects\\e-commercesolution\\e-commerceapi\\controllers\\categorycontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{29EDECCF-0E4D-47B2-AD86-29D25CFF0CF8}|E-CommerceAPI.csproj|solutionrelative:controllers\\categorycontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{29EDECCF-0E4D-47B2-AD86-29D25CFF0CF8}|E-CommerceAPI.csproj|c:\\users\\moham\\realfullprojects\\e-commercesolution\\e-commerceapi\\e-commerceapi.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|",
-      "RelativeMoniker": "D:0:0:{29EDECCF-0E4D-47B2-AD86-29D25CFF0CF8}|E-CommerceAPI.csproj|solutionrelative:e-commerceapi.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|"
+      "AbsoluteMoniker": "D:0:0:{29EDECCF-0E4D-47B2-AD86-29D25CFF0CF8}|E-CommerceAPI.csproj|c:\\users\\moham\\realfullprojects\\e-commercesolution\\e-commerceapi\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{29EDECCF-0E4D-47B2-AD86-29D25CFF0CF8}|E-CommerceAPI.csproj|solutionrelative:program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -20,50 +21,54 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 0,
+          "SelectedChildIndex": 4,
           "Children": [
             {
+              "$type": "Bookmark",
+              "Name": "ST:128:0:{116d2292-e37d-41cd-a077-ebacac4c8cc4}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{3ae79031-e1bc-11d0-8f78-00a0c9110057}"
+            },
+            {
               "$type": "Document",
-              "DocumentIndex": 0,
-              "Title": "E-CommerceDataAccess",
-              "DocumentMoniker": "C:\\Users\\moham\\RealFullProjects\\E-CommerceSolution\\E-CommerceDataAccess\\E-CommerceDataAccess.csproj",
-              "RelativeDocumentMoniker": "..\\E-CommerceDataAccess\\E-CommerceDataAccess.csproj",
-              "ToolTip": "C:\\Users\\moham\\RealFullProjects\\E-CommerceSolution\\E-CommerceDataAccess\\E-CommerceDataAccess.csproj",
-              "RelativeToolTip": "..\\E-CommerceDataAccess\\E-CommerceDataAccess.csproj",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000758|",
-              "WhenOpened": "2025-02-20T12:30:08.712Z",
+              "DocumentIndex": 2,
+              "Title": "Program.cs",
+              "DocumentMoniker": "C:\\Users\\moham\\RealFullProjects\\E-CommerceSolution\\E-CommerceAPI\\Program.cs",
+              "RelativeDocumentMoniker": "Program.cs",
+              "ToolTip": "C:\\Users\\moham\\RealFullProjects\\E-CommerceSolution\\E-CommerceAPI\\Program.cs",
+              "RelativeToolTip": "Program.cs",
+              "ViewState": "AgIAAA8AAAAAAAAAAAAgwBQAAAAiAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-02-24T16:24:28.336Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 1,
-              "Title": "E-CommerceBuisnessLayer",
-              "DocumentMoniker": "C:\\Users\\moham\\RealFullProjects\\E-CommerceSolution\\E-CommerceBuisnessLayer\\E-CommerceBuisnessLayer.csproj",
-              "RelativeDocumentMoniker": "..\\E-CommerceBuisnessLayer\\E-CommerceBuisnessLayer.csproj",
-              "ToolTip": "C:\\Users\\moham\\RealFullProjects\\E-CommerceSolution\\E-CommerceBuisnessLayer\\E-CommerceBuisnessLayer.csproj",
-              "RelativeToolTip": "..\\E-CommerceBuisnessLayer\\E-CommerceBuisnessLayer.csproj",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAsAAAAOAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000758|",
-              "WhenOpened": "2025-02-20T12:30:06.632Z",
+              "Title": "CategoryController.cs",
+              "DocumentMoniker": "C:\\Users\\moham\\RealFullProjects\\E-CommerceSolution\\E-CommerceAPI\\Controllers\\CategoryController.cs",
+              "RelativeDocumentMoniker": "Controllers\\CategoryController.cs",
+              "ToolTip": "C:\\Users\\moham\\RealFullProjects\\E-CommerceSolution\\E-CommerceAPI\\Controllers\\CategoryController.cs",
+              "RelativeToolTip": "Controllers\\CategoryController.cs",
+              "ViewState": "AgIAAAoAAAAAAAAAAAAswBcAAAAxAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-02-24T14:13:57.358Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
-              "Title": "E-CommerceAPI",
-              "DocumentMoniker": "C:\\Users\\moham\\RealFullProjects\\E-CommerceSolution\\E-CommerceAPI\\E-CommerceAPI.csproj",
-              "RelativeDocumentMoniker": "E-CommerceAPI.csproj",
-              "ToolTip": "C:\\Users\\moham\\RealFullProjects\\E-CommerceSolution\\E-CommerceAPI\\E-CommerceAPI.csproj",
-              "RelativeToolTip": "E-CommerceAPI.csproj",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAgAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000758|",
-              "WhenOpened": "2025-02-20T12:28:47.412Z",
+              "DocumentIndex": 0,
+              "Title": "AppDbContext.cs",
+              "DocumentMoniker": "C:\\Users\\moham\\RealFullProjects\\E-CommerceSolution\\E-CommerceDataAccess\\Data\\AppDbContext.cs",
+              "RelativeDocumentMoniker": "..\\E-CommerceDataAccess\\Data\\AppDbContext.cs",
+              "ToolTip": "C:\\Users\\moham\\RealFullProjects\\E-CommerceSolution\\E-CommerceDataAccess\\Data\\AppDbContext.cs*",
+              "RelativeToolTip": "..\\E-CommerceDataAccess\\Data\\AppDbContext.cs*",
+              "ViewState": "AgIAAAMAAAAAAAAAAAAAAAwAAAAFAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-02-24T14:13:44.26Z",
               "EditorCaption": ""
-            },
-            {
-              "$type": "Bookmark",
-              "Name": "ST:128:0:{116d2292-e37d-41cd-a077-ebacac4c8cc4}"
             }
           ]
         }

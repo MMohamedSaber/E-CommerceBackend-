@@ -34,6 +34,9 @@
             "projectReferences": {
               "C:\\Users\\moham\\RealFullProjects\\E-CommerceSolution\\E-CommerceBuisnessLayer\\E-CommerceBuisnessLayer.csproj": {
                 "projectPath": "C:\\Users\\moham\\RealFullProjects\\E-CommerceSolution\\E-CommerceBuisnessLayer\\E-CommerceBuisnessLayer.csproj"
+              },
+              "C:\\Users\\moham\\RealFullProjects\\E-CommerceSolution\\E-CommerceDataAccess\\E-CommerceDataAccess.csproj": {
+                "projectPath": "C:\\Users\\moham\\RealFullProjects\\E-CommerceSolution\\E-CommerceDataAccess\\E-CommerceDataAccess.csproj"
               }
             }
           }
@@ -57,6 +60,10 @@
             "Microsoft.AspNetCore.OpenApi": {
               "target": "Package",
               "version": "[9.0.1, )"
+            },
+            "Swashbuckle.AspNetCore.SwaggerUI": {
+              "target": "Package",
+              "version": "[7.2.0, )"
             }
           },
           "imports": [
@@ -109,11 +116,7 @@
         "frameworks": {
           "net9.0": {
             "targetAlias": "net9.0",
-            "projectReferences": {
-              "C:\\Users\\moham\\RealFullProjects\\E-CommerceSolution\\E-CommerceDataAccess\\E-CommerceDataAccess.csproj": {
-                "projectPath": "C:\\Users\\moham\\RealFullProjects\\E-CommerceSolution\\E-CommerceDataAccess\\E-CommerceDataAccess.csproj"
-              }
-            }
+            "projectReferences": {}
           }
         },
         "warningProperties": {
@@ -178,7 +181,11 @@
         "frameworks": {
           "net9.0": {
             "targetAlias": "net9.0",
-            "projectReferences": {}
+            "projectReferences": {
+              "C:\\Users\\moham\\RealFullProjects\\E-CommerceSolution\\E-CommerceBuisnessLayer\\E-CommerceBuisnessLayer.csproj": {
+                "projectPath": "C:\\Users\\moham\\RealFullProjects\\E-CommerceSolution\\E-CommerceBuisnessLayer\\E-CommerceBuisnessLayer.csproj"
+              }
+            }
           }
         },
         "warningProperties": {
@@ -198,6 +205,18 @@
           "targetAlias": "net9.0",
           "dependencies": {
             "Microsoft.EntityFrameworkCore": {
+              "target": "Package",
+              "version": "[9.0.2, )"
+            },
+            "Microsoft.EntityFrameworkCore.SqlServer": {
+              "target": "Package",
+              "version": "[9.0.2, )"
+            },
+            "Microsoft.Extensions.Configuration": {
+              "target": "Package",
+              "version": "[9.0.2, )"
+            },
+            "Microsoft.Extensions.Configuration.Json": {
               "target": "Package",
               "version": "[9.0.2, )"
             }
