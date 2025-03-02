@@ -3,15 +3,23 @@
   "WorkspaceRootPath": "C:\\Users\\moham\\RealFullProjects\\E-CommerceSolution\\E-CommerceAPI\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{6C7FD6D1-03EF-4BBD-B320-BBD353A27003}|..\\E-CommerceDataAccess\\E-CommerceDataAccess.csproj|c:\\users\\moham\\realfullprojects\\e-commercesolution\\e-commercedataaccess\\data\\appdbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{29EDECCF-0E4D-47B2-AD86-29D25CFF0CF8}|E-CommerceAPI.csproj|c:\\users\\moham\\realfullprojects\\e-commercesolution\\e-commerceapi\\controllers\\userscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{29EDECCF-0E4D-47B2-AD86-29D25CFF0CF8}|E-CommerceAPI.csproj|solutionrelative:controllers\\userscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{29EDECCF-0E4D-47B2-AD86-29D25CFF0CF8}|E-CommerceAPI.csproj|c:\\users\\moham\\realfullprojects\\e-commercesolution\\e-commerceapi\\controllers\\categorycontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{29EDECCF-0E4D-47B2-AD86-29D25CFF0CF8}|E-CommerceAPI.csproj|solutionrelative:controllers\\categorycontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{3726AD0F-F4F3-4391-AC00-BBB8D7E0E761}|..\\E-CommerceBuisnessLayer\\E-CommerceBuisnessLayer.csproj|c:\\users\\moham\\realfullprojects\\e-commercesolution\\e-commercebuisnesslayer\\interfaces\\iuserrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{29EDECCF-0E4D-47B2-AD86-29D25CFF0CF8}|E-CommerceAPI.csproj|c:\\users\\moham\\realfullprojects\\e-commercesolution\\e-commerceapi\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{29EDECCF-0E4D-47B2-AD86-29D25CFF0CF8}|E-CommerceAPI.csproj|solutionrelative:program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{3726AD0F-F4F3-4391-AC00-BBB8D7E0E761}|..\\E-CommerceBuisnessLayer\\E-CommerceBuisnessLayer.csproj|c:\\users\\moham\\realfullprojects\\e-commercesolution\\e-commercebuisnesslayer\\sevices\\usersevice\\iuserservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{6C7FD6D1-03EF-4BBD-B320-BBD353A27003}|..\\E-CommerceDataAccess\\E-CommerceDataAccess.csproj|c:\\users\\moham\\realfullprojects\\e-commercesolution\\e-commercedataaccess\\repository\\userrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{3726AD0F-F4F3-4391-AC00-BBB8D7E0E761}|..\\E-CommerceBuisnessLayer\\E-CommerceBuisnessLayer.csproj|c:\\users\\moham\\realfullprojects\\e-commercesolution\\e-commercebuisnesslayer\\dtos\\userdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{3726AD0F-F4F3-4391-AC00-BBB8D7E0E761}|..\\E-CommerceBuisnessLayer\\E-CommerceBuisnessLayer.csproj|c:\\users\\moham\\realfullprojects\\e-commercesolution\\e-commercebuisnesslayer\\automappers\\mappingprofile.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -21,7 +29,7 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 4,
+          "SelectedChildIndex": 7,
           "Children": [
             {
               "$type": "Bookmark",
@@ -33,41 +41,80 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
-              "Title": "Program.cs",
-              "DocumentMoniker": "C:\\Users\\moham\\RealFullProjects\\E-CommerceSolution\\E-CommerceAPI\\Program.cs",
-              "RelativeDocumentMoniker": "Program.cs",
-              "ToolTip": "C:\\Users\\moham\\RealFullProjects\\E-CommerceSolution\\E-CommerceAPI\\Program.cs",
-              "RelativeToolTip": "Program.cs",
-              "ViewState": "AgIAAAgAAAAAAAAAAAAAABkAAAAAAAAAAAAAAA==",
+              "DocumentIndex": 5,
+              "Title": "MappingProfile.cs",
+              "DocumentMoniker": "C:\\Users\\moham\\RealFullProjects\\E-CommerceSolution\\E-CommerceBuisnessLayer\\AutoMappers\\MappingProfile.cs",
+              "RelativeDocumentMoniker": "..\\E-CommerceBuisnessLayer\\AutoMappers\\MappingProfile.cs",
+              "ToolTip": "C:\\Users\\moham\\RealFullProjects\\E-CommerceSolution\\E-CommerceBuisnessLayer\\AutoMappers\\MappingProfile.cs",
+              "RelativeToolTip": "..\\E-CommerceBuisnessLayer\\AutoMappers\\MappingProfile.cs",
+              "ViewState": "AgIAABYAAAAAAAAAAAAgwCYAAAAmAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-02-24T16:24:28.336Z",
+              "WhenOpened": "2025-03-02T12:22:18.599Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "UserDto.cs",
+              "DocumentMoniker": "C:\\Users\\moham\\RealFullProjects\\E-CommerceSolution\\E-CommerceBuisnessLayer\\DTOs\\UserDto.cs",
+              "RelativeDocumentMoniker": "..\\E-CommerceBuisnessLayer\\DTOs\\UserDto.cs",
+              "ToolTip": "C:\\Users\\moham\\RealFullProjects\\E-CommerceSolution\\E-CommerceBuisnessLayer\\DTOs\\UserDto.cs",
+              "RelativeToolTip": "..\\E-CommerceBuisnessLayer\\DTOs\\UserDto.cs",
+              "ViewState": "AgIAAAYAAAAAAAAAAAAAAAwAAAAWAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-03-02T12:21:32.999Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "UserRepository.cs",
+              "DocumentMoniker": "C:\\Users\\moham\\RealFullProjects\\E-CommerceSolution\\E-CommerceDataAccess\\Repository\\UserRepository.cs",
+              "RelativeDocumentMoniker": "..\\E-CommerceDataAccess\\Repository\\UserRepository.cs",
+              "ToolTip": "C:\\Users\\moham\\RealFullProjects\\E-CommerceSolution\\E-CommerceDataAccess\\Repository\\UserRepository.cs",
+              "RelativeToolTip": "..\\E-CommerceDataAccess\\Repository\\UserRepository.cs",
+              "ViewState": "AgIAAAwAAAAAAAAAAAAAABYAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-03-02T11:58:10.121Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "IUserService.cs",
+              "DocumentMoniker": "C:\\Users\\moham\\RealFullProjects\\E-CommerceSolution\\E-CommerceBuisnessLayer\\Sevices\\UserSevice\\IUserService.cs",
+              "RelativeDocumentMoniker": "..\\E-CommerceBuisnessLayer\\Sevices\\UserSevice\\IUserService.cs",
+              "ToolTip": "C:\\Users\\moham\\RealFullProjects\\E-CommerceSolution\\E-CommerceBuisnessLayer\\Sevices\\UserSevice\\IUserService.cs",
+              "RelativeToolTip": "..\\E-CommerceBuisnessLayer\\Sevices\\UserSevice\\IUserService.cs",
+              "ViewState": "AgIAAAcAAAAAAAAAAADgvw8AAAAGAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-03-02T11:57:46.111Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 1,
-              "Title": "CategoryController.cs",
-              "DocumentMoniker": "C:\\Users\\moham\\RealFullProjects\\E-CommerceSolution\\E-CommerceAPI\\Controllers\\CategoryController.cs",
-              "RelativeDocumentMoniker": "Controllers\\CategoryController.cs",
-              "ToolTip": "C:\\Users\\moham\\RealFullProjects\\E-CommerceSolution\\E-CommerceAPI\\Controllers\\CategoryController.cs",
-              "RelativeToolTip": "Controllers\\CategoryController.cs",
-              "ViewState": "AgIAAAoAAAAAAAAAAAAswBcAAAAxAAAAAAAAAA==",
+              "Title": "IUserRepository.cs",
+              "DocumentMoniker": "C:\\Users\\moham\\RealFullProjects\\E-CommerceSolution\\E-CommerceBuisnessLayer\\Interfaces\\IUserRepository.cs",
+              "RelativeDocumentMoniker": "..\\E-CommerceBuisnessLayer\\Interfaces\\IUserRepository.cs",
+              "ToolTip": "C:\\Users\\moham\\RealFullProjects\\E-CommerceSolution\\E-CommerceBuisnessLayer\\Interfaces\\IUserRepository.cs",
+              "RelativeToolTip": "..\\E-CommerceBuisnessLayer\\Interfaces\\IUserRepository.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA8AAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-02-24T14:13:57.358Z",
+              "WhenOpened": "2025-03-02T11:56:49.186Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 0,
-              "Title": "AppDbContext.cs",
-              "DocumentMoniker": "C:\\Users\\moham\\RealFullProjects\\E-CommerceSolution\\E-CommerceDataAccess\\Data\\AppDbContext.cs",
-              "RelativeDocumentMoniker": "..\\E-CommerceDataAccess\\Data\\AppDbContext.cs",
-              "ToolTip": "C:\\Users\\moham\\RealFullProjects\\E-CommerceSolution\\E-CommerceDataAccess\\Data\\AppDbContext.cs",
-              "RelativeToolTip": "..\\E-CommerceDataAccess\\Data\\AppDbContext.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAoAAAAyAAAAAAAAAA==",
+              "Title": "UsersController.cs",
+              "DocumentMoniker": "C:\\Users\\moham\\RealFullProjects\\E-CommerceSolution\\E-CommerceAPI\\Controllers\\UsersController.cs",
+              "RelativeDocumentMoniker": "Controllers\\UsersController.cs",
+              "ToolTip": "C:\\Users\\moham\\RealFullProjects\\E-CommerceSolution\\E-CommerceAPI\\Controllers\\UsersController.cs",
+              "RelativeToolTip": "Controllers\\UsersController.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABQAAAAgAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-02-24T14:13:44.26Z",
+              "WhenOpened": "2025-03-02T11:52:11.462Z",
               "EditorCaption": ""
             }
           ]

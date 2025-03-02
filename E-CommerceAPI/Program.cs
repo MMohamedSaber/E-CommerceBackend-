@@ -1,5 +1,7 @@
 
 using E_CommerceBuisnessLayer.Interfaces;
+using E_CommerceBuisnessLayer.Sevices;
+using E_CommerceBuisnessLayer.Sevices.UserSevice;
 using E_CommerceDataAccess.Data;
 using E_CommerceDataAccess.Repository;
 using Microsoft.EntityFrameworkCore;
@@ -22,6 +24,18 @@ namespace E_CommerceAPI
             options.UseSqlServer(builder.Configuration.GetSection("constr").Value));
 
             builder.Services.AddTransient(typeof(IBaseRepository<>), typeof(BaseRepository<>));
+            builder.Services.AddTransient<IUserRepository, UserRepository>();
+            builder.Services.AddTransient<ICategoryService, CategoryService>();
+            builder.Services.AddTransient<IBrandService, BrandService>();
+            builder.Services.AddTransient<IBestSellingsService, BestSellingService>();
+            builder.Services.AddTransient<IProductService, ProductService>();
+            builder.Services.AddTransient<IUserService, UserService>();
+
+
+            builder.Services.AddAutoMapper(AppDomain.CurrentDomain.GetAssemblies());
+
+            //  builder.Services.AddAutoMapper(typeof(Program));
+
             var app = builder.Build();
 
             // Configure the HTTP request pipeline.

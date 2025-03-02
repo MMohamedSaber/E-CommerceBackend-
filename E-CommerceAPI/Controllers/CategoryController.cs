@@ -1,5 +1,8 @@
-﻿using E_CommerceBuisnessLayer.Interfaces;
-using E_CommerceDataAccess.Models;
+﻿using AutoMapper;
+using E_CommerceBuisnessLayer.DTOs;
+using E_CommerceBuisnessLayer.Interfaces;
+using E_CommerceBuisnessLayer.Models;
+using E_CommerceBuisnessLayer.Sevices;
 using E_CommerceDataAccess.Repository;
 using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
@@ -10,18 +13,19 @@ namespace E_CommerceAPI.Controllers
     [ApiController]
     public class CategoryController : ControllerBase
     {
-        private readonly IBaseRepository<Categori> _categoriesRepository;
+        private readonly ICategoryService _categorySevice;
 
-        public CategoryController(IBaseRepository<Categori> categoriesRepository)
+        public CategoryController(ICategoryService categorySevice)
         {
-            _categoriesRepository = categoriesRepository;
+          _categorySevice = categorySevice;
         }
         [HttpGet("GetAllCategories")]
         [ProducesResponseType(StatusCodes.Status200OK)]
         [ProducesResponseType(StatusCodes.Status404NotFound)]
-        public ActionResult<IEnumerable<Categori>> GetAllCategories()
+        public ActionResult GetAllCategories()
         {
-           return Ok(_categoriesRepository.GetAll());
+          var categories = _categorySevice.GetAllCategories();
+            return Ok(categories);
         }
     }
 }

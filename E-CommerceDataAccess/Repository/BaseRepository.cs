@@ -1,10 +1,17 @@
 ﻿
+
+
+using AutoMapper;
+using E_CommerceBuisnessLayer.DTOs;
 using E_CommerceBuisnessLayer.Interfaces;
+using E_CommerceBuisnessLayer.Models;
 using E_CommerceDataAccess.Data;
+using Microsoft.EntityFrameworkCore;
+using System.Linq.Expressions;
 
 namespace E_CommerceDataAccess.Repository
 {
-    public class BaseRepository<T> : IBaseRepository<T> where T : class
+    public class BaseRepository<TModel> : IBaseRepository<TModel> where TModel: class
     {
        protected  AppDbContext _context;
         public BaseRepository(AppDbContext context)
@@ -12,14 +19,31 @@ namespace E_CommerceDataAccess.Repository
             _context=context;
         }
 
-        public List<T> GetAll()
+        public async Task<TModel> AddNew(TModel model)
         {
-            var listOfT = new List<T>();
+            await _context.Set<TModel>().AddAsync(model);
+            await _context.SaveChangesAsync();
+        
+            return model;
+        }
 
-            listOfT =_context.Set<T>().ToList();
+        public IEnumerable<TModel> GetAll()
+        {
+            return _context.Set<TModel>()
+                .AsNoTracking()
+                .ToList();
+        }
+        
 
-            return listOfT;
+      async Task<IEnumerable<TModel>> IBaseRepository<TModel>.GetAll(Expression<Func<TModel, object>>[] includes)
+       {
+            IQueryable<TModel> query = _context.Set<TModel>().AsNoTracking();
 
+            foreach (var include in includes)
+            {
+               query = query.Include(include);
+            }
+            return query.ToList();
         }
     }
 }
