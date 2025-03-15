@@ -9,9 +9,13 @@ namespace E_CommerceBuisnessLayer.Interfaces
 {
     public interface IBaseRepository<TModel> where TModel : class
     {
-        IEnumerable<TModel> GetAll();
-        Task <IEnumerable<TModel>> GetAll( Expression<Func<TModel, object>>[] includes);
-        Task<TModel> AddNew(TModel model);
+        Task <IReadOnlyList<TModel>>GetAllAsync();
+        Task <IReadOnlyList<TModel>> GetAllAsync( Expression<Func<TModel, object>>[] includes);
+        Task<TModel> GetByIdAsync(int ID);
+        Task<TModel> GetByIdAsync(int ID, Expression<Func<TModel, object>>[] includes);
+        Task AddNew(TModel model);
+        Task Update(TModel model);
+        Task Delete(int model);
         
     }
 }

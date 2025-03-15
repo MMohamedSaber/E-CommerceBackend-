@@ -1,4 +1,5 @@
-﻿using System;
+﻿using AutoMapper.Configuration.Conventions;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -22,5 +23,8 @@ namespace E_CommerceBuisnessLayer.Models
         // Navigation Properties
         public int BrandId { get; set; }
         public Brand Brand { get; set; }
+
+        public int PhotoId { get; set; }
+        public Photo Photo { get; set; }
     }
 }

@@ -1,8 +1,9 @@
 ﻿using E_CommerceBuisnessLayer.DTOs;
-using E_CommerceBuisnessLayer.Interfaces;
+using E_CommerceBuisnessLayer.Interfaces.user;
 using E_CommerceBuisnessLayer.Models;
 using E_CommerceDataAccess.Data;
 using Microsoft.EntityFrameworkCore;
+using Microsoft.Identity.Client;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -23,17 +24,20 @@ namespace E_CommerceDataAccess.Repository
 
         public async Task<bool> IsEmailExist(string Email)
         {
-           return await _context.users.AnyAsync(u=> u.Email == Email);
+           var isExist= await _context.users.AnyAsync(u=> u.Email == Email);
+            return isExist;
         }
 
         public async Task<bool> IsEmailPasswordExist(string Email, string Password)
         {
-            return await _context.users.AnyAsync(u => u.Email == Email && u.Password == Password);
+            var isExist= await _context.users.AnyAsync(u => u.Email == Email && u.Password == Password);
+            return isExist;
         }
 
         public async Task<bool> IsUserNameExist(string UserName)
         {
-            return await _context.users.AnyAsync(u => u.UserName == UserName);
+               var Exist= await _context.users.AnyAsync(u => u.UserName == UserName);
+            return Exist == true;
         }
 
     }

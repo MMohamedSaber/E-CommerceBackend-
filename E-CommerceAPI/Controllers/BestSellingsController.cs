@@ -1,5 +1,6 @@
 ﻿using E_CommerceBuisnessLayer;
 using E_CommerceBuisnessLayer.Interfaces;
+using E_CommerceBuisnessLayer.Interfaces.topsellings;
 using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
 
@@ -16,9 +17,7 @@ namespace E_CommerceAPI.Controllers
             _bestSellingsService = bestSellingsService;
         }
 
-        [HttpGet("Best Sellings")]
-        [ProducesResponseType(StatusCodes.Status200OK)]
-        [ProducesResponseType(StatusCodes.Status404NotFound)]
+        [HttpGet("get-all")]
         public async Task<ActionResult> BestSelling()
         {
             var bestSellings =  await _bestSellingsService.GetAllBestSellings();

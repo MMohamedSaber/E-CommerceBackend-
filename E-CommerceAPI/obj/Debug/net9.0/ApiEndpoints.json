@@ -1,41 +1,78 @@
 [
   {
+    "ContainingType": "E_CommerceAPI.Controllers.AddressesController",
+    "Method": "AddNewAddress",
+    "RelativePath": "api/Addresses/add-new",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "addressDto",
+        "Type": "E_CommerceBuisnessLayer.DTOs.CreatAddressDto",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "E_CommerceAPI.Controllers.AddressesController",
+    "Method": "DeleteAddress",
+    "RelativePath": "api/Addresses/delete/{Id}",
+    "HttpMethod": "DELETE",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "Id",
+        "Type": "System.Int32",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
     "ContainingType": "E_CommerceAPI.Controllers.BestSellingsController",
     "Method": "BestSelling",
-    "RelativePath": "api/BestSelling/Best Sellings",
+    "RelativePath": "api/BestSelling/get-all",
     "HttpMethod": "GET",
     "IsController": true,
     "Order": 0,
     "Parameters": [],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "E_CommerceAPI.Controllers.BrandsController",
+    "Method": "GetAllBarnds",
+    "RelativePath": "api/Brands/get-all",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "E_CommerceAPI.Controllers.CartsController",
+    "Method": "AddToCart",
+    "RelativePath": "api/Carts/AddToCart",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "cartdto",
+        "Type": "E_CommerceBuisnessLayer.DTOs.CartDto",
+        "IsRequired": true
+      }
+    ],
     "ReturnTypes": [
       {
-        "Type": "System.Void",
-        "MediaTypes": [],
-        "StatusCode": 200
-      },
-      {
-        "Type": "Microsoft.AspNetCore.Mvc.ProblemDetails",
+        "Type": "E_CommerceBuisnessLayer.Models.Cart",
         "MediaTypes": [
           "text/plain",
           "application/json",
           "text/json"
         ],
-        "StatusCode": 404
-      }
-    ]
-  },
-  {
-    "ContainingType": "E_CommerceAPI.Controllers.BrandsController",
-    "Method": "GetAllBarnds",
-    "RelativePath": "api/Brands/GetAllBarnds",
-    "HttpMethod": "GET",
-    "IsController": true,
-    "Order": 0,
-    "Parameters": [],
-    "ReturnTypes": [
-      {
-        "Type": "System.Void",
-        "MediaTypes": [],
         "StatusCode": 200
       },
       {
@@ -51,8 +88,8 @@
   },
   {
     "ContainingType": "E_CommerceAPI.Controllers.CategoryController",
-    "Method": "GetAllCategories",
-    "RelativePath": "api/Category/GetAllCategories",
+    "Method": "get",
+    "RelativePath": "api/Category/get-all",
     "HttpMethod": "GET",
     "IsController": true,
     "Order": 0,
@@ -75,9 +112,62 @@
     ]
   },
   {
+    "ContainingType": "E_CommerceAPI.Controllers.ReviewsController",
+    "Method": "AddReview",
+    "RelativePath": "api/Reviews/add-new",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "reviewDto",
+        "Type": "E_CommerceBuisnessLayer.DTOs.CreateReviewDto",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "E_CommerceAPI.Controllers.ReviewsController",
+    "Method": "DeleteReview",
+    "RelativePath": "api/Reviews/delete/{Id}",
+    "HttpMethod": "DELETE",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "Id",
+        "Type": "System.Int32",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "E_CommerceAPI.Controllers.ReviewsController",
+    "Method": "UpdateReview",
+    "RelativePath": "api/Reviews/update/{Id}",
+    "HttpMethod": "PUT",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "Id",
+        "Type": "System.Int32",
+        "IsRequired": true
+      },
+      {
+        "Name": "createReviewDto",
+        "Type": "E_CommerceBuisnessLayer.DTOs.CreateReviewDto",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
     "ContainingType": "E_CommerceAPI.Controllers.UsersController",
     "Method": "AddNewUser",
-    "RelativePath": "api/Users/AddNewUser",
+    "RelativePath": "api/Users/add-new",
     "HttpMethod": "POST",
     "IsController": true,
     "Order": 0,
@@ -88,31 +178,12 @@
         "IsRequired": true
       }
     ],
-    "ReturnTypes": [
-      {
-        "Type": "E_CommerceBuisnessLayer.Models.User",
-        "MediaTypes": [
-          "text/plain",
-          "application/json",
-          "text/json"
-        ],
-        "StatusCode": 200
-      },
-      {
-        "Type": "Microsoft.AspNetCore.Mvc.ProblemDetails",
-        "MediaTypes": [
-          "text/plain",
-          "application/json",
-          "text/json"
-        ],
-        "StatusCode": 404
-      }
-    ]
+    "ReturnTypes": []
   },
   {
     "ContainingType": "E_CommerceAPI.Controllers.UsersController",
     "Method": "Login",
-    "RelativePath": "api/Users/LogInUsingEmailAndPassword",
+    "RelativePath": "api/Users/loginbyEmailandAddress",
     "HttpMethod": "POST",
     "IsController": true,
     "Order": 0,
@@ -128,25 +199,6 @@
         "IsRequired": false
       }
     ],
-    "ReturnTypes": [
-      {
-        "Type": "E_CommerceBuisnessLayer.DTOs.UserDto",
-        "MediaTypes": [
-          "text/plain",
-          "application/json",
-          "text/json"
-        ],
-        "StatusCode": 200
-      },
-      {
-        "Type": "Microsoft.AspNetCore.Mvc.ProblemDetails",
-        "MediaTypes": [
-          "text/plain",
-          "application/json",
-          "text/json"
-        ],
-        "StatusCode": 404
-      }
-    ]
+    "ReturnTypes": []
   }
 ]

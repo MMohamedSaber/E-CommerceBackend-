@@ -11,6 +11,10 @@ namespace E_CommerceDataAccess.Data
         public DbSet<Product> Products { get; set; }
         public DbSet<BestSelling> bestSellings { get; set; }
         public DbSet<User> users{ get; set; }
+        public DbSet<Address> Addresses{ get; set; }
+        public DbSet<Review> Reviews { get; set; }
+        public DbSet<Cart> Carts { get; set; }
+        public DbSet<Photo > Photos { get; set; }
 
         public AppDbContext(DbContextOptions<AppDbContext> options) : base(options) { }
 

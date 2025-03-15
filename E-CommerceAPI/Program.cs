@@ -1,9 +1,16 @@
 
 using E_CommerceBuisnessLayer.Interfaces;
-using E_CommerceBuisnessLayer.Sevices;
-using E_CommerceBuisnessLayer.Sevices.UserSevice;
+using E_CommerceBuisnessLayer.Interfaces.address;
+using E_CommerceBuisnessLayer.Interfaces.brand;
+using E_CommerceBuisnessLayer.Interfaces.cart;
+using E_CommerceBuisnessLayer.Interfaces.category;
+using E_CommerceBuisnessLayer.Interfaces.products;
+using E_CommerceBuisnessLayer.Interfaces.review;
+using E_CommerceBuisnessLayer.Interfaces.topsellings;
+using E_CommerceBuisnessLayer.Interfaces.user;
 using E_CommerceDataAccess.Data;
 using E_CommerceDataAccess.Repository;
+using E_CommerceDataAccess.Sevices;
 using Microsoft.EntityFrameworkCore;
 
 namespace E_CommerceAPI
@@ -23,13 +30,15 @@ namespace E_CommerceAPI
             builder.Services.AddDbContext<AppDbContext>(options =>
             options.UseSqlServer(builder.Configuration.GetSection("constr").Value));
 
-            builder.Services.AddTransient(typeof(IBaseRepository<>), typeof(BaseRepository<>));
-            builder.Services.AddTransient<IUserRepository, UserRepository>();
-            builder.Services.AddTransient<ICategoryService, CategoryService>();
-            builder.Services.AddTransient<IBrandService, BrandService>();
-            builder.Services.AddTransient<IBestSellingsService, BestSellingService>();
-            builder.Services.AddTransient<IProductService, ProductService>();
-            builder.Services.AddTransient<IUserService, UserService>();
+            builder.Services.AddScoped<ICategoryService, CategoryService>();
+            builder.Services.AddScoped<IBrandService, BrandService>();
+            builder.Services.AddScoped<IBestSellingsService, BestSellingService>();
+           // builder.Services.AddTransient<IProductService, ProductService>();
+             builder.Services.AddTransient<IUserService, UserService>();
+            builder.Services.AddTransient<IAddressService, AddressService>();
+            builder.Services.AddTransient<IReviewService, ReviewService>();
+            builder.Services.AddScoped<IServiceCart, CartService>();
+            builder.Services.AddScoped<IUnitOfWork,UnitOfWork>();
 
 
             builder.Services.AddAutoMapper(AppDomain.CurrentDomain.GetAssemblies());
@@ -50,7 +59,7 @@ namespace E_CommerceAPI
 
             app.UseAuthorization();
 
-
+            
             app.MapControllers();
 
             app.Run();

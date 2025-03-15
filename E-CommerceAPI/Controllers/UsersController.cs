@@ -1,6 +1,8 @@
-﻿using E_CommerceBuisnessLayer.DTOs;
+﻿using E_CommerceAPI.helper;
+using E_CommerceBuisnessLayer.DTOs;
+using E_CommerceBuisnessLayer.Interfaces;
+using E_CommerceBuisnessLayer.Interfaces.user;
 using E_CommerceBuisnessLayer.Models;
-using E_CommerceBuisnessLayer.Sevices.UserSevice;
 using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
 
@@ -18,10 +20,8 @@ namespace E_CommerceAPI.Controllers
             _userService = userService;
         }
 
-        [HttpPost("AddNewUser")]
-        [ProducesResponseType(StatusCodes.Status200OK)]
-        [ProducesResponseType(StatusCodes.Status404NotFound)]
-        public async Task<ActionResult<User>> AddNewUser(CreateUserDto userDto)
+        [HttpPost("add-new")]
+        public async Task<IActionResult> AddNewUser(CreateUserDto userDto)
         {
             if (userDto == null)
             {
@@ -53,28 +53,31 @@ namespace E_CommerceAPI.Controllers
                 return BadRequest("Password must be at least 6 characters long"); // Validation: Password length should be >= 6
             }
 
-            var userToSave =  await _userService.addNewUser(userDto);
-
-            if (userToSave == null)
+            try
             {
-                return NotFound("User could not be created"); // Validation: Handle service failure
+
+            var userToSave =  await _userService.addNewUser(userDto);
+                if (userToSave != null)
+                {
+                  return Ok(userToSave);
+                }
+            }
+            catch (Exception ex)
+            {
+                return BadRequest(new ApiResponse(400, ex.Message));
             }
 
-            return Ok(userToSave);
+                return NotFound("User could not be created"); // Validation: Handle service failure
 
         }
 
 
-        [HttpPost("LogInUsingEmailAndPassword")]
-        [ProducesResponseType(StatusCodes.Status200OK)]
-        [ProducesResponseType(StatusCodes.Status404NotFound)]
-        public async Task<ActionResult<UserDto>> Login(string Email, string Password)
+        [HttpPost("loginbyEmailandAddress")]
+        public async Task<IActionResult> Login(string Email, string Password)
         {
             if (string.IsNullOrWhiteSpace(Email) || string.IsNullOrEmpty(Password))
-             return BadRequest("Invalid Email and Password");
-            
-            if (!await _userService.IsEmailExist(Email))
-                return BadRequest("The Email Is not Exist");
+                return BadRequest("Invalid Email and Password");
+
 
             if (!IsValidEmail(Email))
                 return BadRequest("Invalid Email");
@@ -82,9 +85,17 @@ namespace E_CommerceAPI.Controllers
             if (!await _userService.LoginUsingEmailPasswordExist(Email, Password))
                 return Unauthorized("Invalid password");
 
-            var user = await _userService.GetUserByEmail(Email);
+            try
+            {
 
+            var user = await _userService.GetUserByEmail(Email);
             return Ok(user);
+            }
+            catch (Exception ex)
+            {
+                return BadRequest(new ApiResponse(400, ex.Message));
+            }
+
         }
         private bool IsValidEmail(string email)
         {

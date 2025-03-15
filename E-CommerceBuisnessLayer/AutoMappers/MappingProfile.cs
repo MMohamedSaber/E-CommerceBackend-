@@ -38,6 +38,14 @@ namespace E_CommerceBuisnessLayer.AutoMappers
 
             CreateMap<User, UserDto>();
 
+            CreateMap<Address, CreatAddressDto>().ReverseMap();
+
+            CreateMap<Review, CreateReviewDto>().ReverseMap();
+
+            CreateMap<Review, ReviewDetails>()
+                .ForMember(dest => dest.UserName, src => src.MapFrom(src => src.User.fullName)).ReverseMap();
+                
+            CreateMap<Cart, CartDto>().ReverseMap();
         }
 
     }
